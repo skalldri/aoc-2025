@@ -1,0 +1,11 @@
+#!/bin/bash
+set -euo -pipefail
+
+cmake -S . -B ./build
+cmake --build build
+
+echo ""
+echo "---"
+echo ""
+
+./build/day1 /workspaces/aoc-2025/day1/input
